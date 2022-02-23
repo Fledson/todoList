@@ -137,8 +137,8 @@ const Utils = {
     const newTask = tasks[index].childNodes[1].innerHTML
     taskList[index].taskDescription = newTask
   },
-  api(rota, method, body){
-    console.log(rota, method, body)
+  api(rota, method, body, header){
+
     fetch(`http://127.0.0.1:3333${rota}`, {
       method: method, 
       headers: {
